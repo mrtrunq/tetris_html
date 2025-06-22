@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tetris</title>
+        <link rel="stylesheet" href="assets/index.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    </head>
+    <body class="bg-[#e6e6e6]">
+        <div class="flex justify-center mt-[100px] gap-8">
+            <canvas id="board" class="border-2"></canvas>
+
+            <div class="flex flex-col justify-between w-[200px]">
+                <div class="flex flex-col gap-4 items-center">
+                    <h1 class="text-3xl">TETRIS</h1>
+                    <p>Score: <span id="score">0</span></p>
+                </div>
+                <button type="button" class="border bg-green-500 text-[16px] px-[30px] py-[15px] cursor-pointer" id="play">Play</button>
+            </div>
+        </div>
+        <script src="./assets/index.js"></script>
+    </body>
+</html>
